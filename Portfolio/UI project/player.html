@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="player.css">
+    <title>Music Library</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <h1>Music Library</h1>
+
+    <div id="menu">
+        <b id="home"><a href="index.html" title="Home">⏏</a></b>
+    </div>
+
+    <div id="details">
+        <div id="past2"></div>
+        <div id="past1"></div>
+        <div id="albumArt"></div>
+        <div id="song2"></div>
+        <div id="song3"></div>
+        <div id="album">Album name</div>
+        <div id="artist">Artist name</div>
+        <span id="disc"></span>
+        <audio id="audio"></audio>
+    </div>
+
+    <div class="sliders">
+        <span id="currentTime">0:00</span>
+        <input type="range" id="seek" value="0" min="0" max="100">
+        <span id="duration">0:00</span>
+    </div>
+
+    <div id="volume-controls">
+        <span id="down">🕩</span>
+        <input type="range" min="0" max="100" value="99" id="volume" class="volume" onchange="setVolume()">
+        <span id="up">🕪</span>
+    </div>
+
+    <div id="controls">
+        <button class="reshuffle" title="shuffle">⇄</button>
+        <button class="prevNnext" title="previous">⏮</button>
+        <button id="playPause" title="pause">▶</button>
+        <button class="prevNnext" title="next">⏭</button>
+        <button class="reshuffle" title="rewind">↻</button>
+    </div>
+    <br><br>
+    <h1>Tracklist</h1>
+    <hr>
+    <br>
+    <div id="playlist"></div>
+<br>
+<footer>
+    © 2026 Mavi Reyes All Rights Reserved 
+</footer>
+    <script src="player.js"></script>
+
+</body>
+</html>
